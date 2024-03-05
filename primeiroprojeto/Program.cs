@@ -7,3 +7,4 @@ objCliente.cpf = "888";
 
 
 Console.WriteLine("Hello, World!");
+Console.WriteLine(objCliente.nome);
