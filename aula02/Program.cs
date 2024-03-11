@@ -1,3 +1,3 @@
-﻿Console.WriteLine("Hello, World!");
-
-Estudante aluno = new Estudante();
+﻿Estudante aluno = new Estudante();
+aluno.Nome = "Skol";
+Console.Write(aluno.Nome);
