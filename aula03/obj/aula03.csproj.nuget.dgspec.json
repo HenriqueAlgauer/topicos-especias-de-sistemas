@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03\\aula03.csproj": {}
+    "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03\\aula03.csproj": {
+    "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03\\aula03.csproj",
+        "projectUniqueName": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03.csproj",
         "projectName": "aula03",
-        "projectPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03\\aula03.csproj",
+        "projectPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03.csproj",
         "packagesPath": "C:\\Users\\pia\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\aula03\\obj\\",
+        "outputPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pia\\AppData\\Roaming\\NuGet\\NuGet.Config"
