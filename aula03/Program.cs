@@ -1,17 +1,18 @@
-﻿Universidade objUniversidade = new Universidade();
+﻿Curso Curso1 = new Curso();
+Turma Turma1 = new Turma();
+Turma Turma2 = new Turma();
 
-objUniversidade.nome = "UP";
-objUniversidade.localizacao = "Ecoville";
-objUniversidade.anoFundacao = 1990;
+Curso1.nome = "ADS";
+Curso1.duracao = 2;
 
-Curso objCurso = new Curso();
-objCurso.nome = "ADS";
-objUniversidade.AdicionarCurso(objCurso);
+Turma1.ano = 2025;
+Turma2.ano = 2026;
+Turma1.turno = "Noturno";
+Turma2.turno = "Manha";
 
+Curso1.AdicionarTurma(Turma1);
+Curso1.AdicionarTurma(Turma2);
 
-foreach(var curso in objUniversidade.cursos){
-    Console.WriteLine(curso.nome);
+foreach(var T in Curso1.turmas){
+    Console.WriteLine(T.turno);
 }
-
-
-Console.Write(objUniversidade.nome);
