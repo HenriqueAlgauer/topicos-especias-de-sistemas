@@ -9,4 +9,5 @@ public class Cliente{
             this.nome = "Araci";
         }
     }
+    public Cliente(){};
 }
