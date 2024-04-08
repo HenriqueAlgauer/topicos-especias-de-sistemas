@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula01\\primeiroprojeto.csproj",
-      "projectName": "primeiroprojeto",
-      "projectPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula01\\primeiroprojeto.csproj",
+      "projectUniqueName": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\at-industria\\at-industria.csproj",
+      "projectName": "at-industria",
+      "projectPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\at-industria\\at-industria.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula01\\obj\\",
+      "outputPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\at-industria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
