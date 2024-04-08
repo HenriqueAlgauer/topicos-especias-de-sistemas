@@ -1,11 +1,11 @@
 //./funcionario.cs
-public class Funcionario{
-    public string cpf {get;set;}
-    public string nome {get;set;}
-    public string email {get;set;}
-    public float salario {get;set;}
+public class funcionario{
+    public string cpf {get;set;} = string.Empty;
+    public string nome {get;set;} = string.Empty;
+    public string email {get;set;} = string.Empty;
+    public double salario {get;set;}
 
-    public float calcularBonus(){
-        return this.salario;
+    public double calcularBonus(){
+        return this.salario * 0.5;
     }
 }

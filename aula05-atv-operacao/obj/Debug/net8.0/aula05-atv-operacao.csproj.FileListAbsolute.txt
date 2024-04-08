@@ -1,0 +1,15 @@
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.AssemblyInfoInputs.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.AssemblyInfo.cs
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.csproj.CoreCompileInputs.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.sourcelink.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\bin\Debug\net8.0\aula05-atv-operacao.exe
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\bin\Debug\net8.0\aula05-atv-operacao.deps.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\bin\Debug\net8.0\aula05-atv-operacao.runtimeconfig.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\bin\Debug\net8.0\aula05-atv-operacao.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\bin\Debug\net8.0\aula05-atv-operacao.pdb
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\refint\aula05-atv-operacao.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.pdb
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\aula05-atv-operacao.genruntimeconfig.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula05-atv-operacao\obj\Debug\net8.0\ref\aula05-atv-operacao.dll
