@@ -1,4 +1,4 @@
-public class passeio{
+public class passeio : iVeiculo{
     public string combustivel{get;set;}
     public int eixos{get;set;}
 

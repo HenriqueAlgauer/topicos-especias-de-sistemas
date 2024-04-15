@@ -3,13 +3,8 @@ public class pedagio{
     public double preco_eixo{get;set;}
 
     //Método de cobrança
-    public bool CobrarPedagio(passeio veiculo){
+    public bool CobrarPedagio(iVeiculo veiculo){
         double preco_cobrado = veiculo.PagarPedagio(this.preco_eixo);
-        Console.WriteLine(preco_cobrado);
-        return true;
-    }
-    public bool CobrarPedagio(passeio moto){
-        double preco_cobrado = moto.PagarPedagio(this.preco_eixo);
         Console.WriteLine(preco_cobrado);
         return true;
     }

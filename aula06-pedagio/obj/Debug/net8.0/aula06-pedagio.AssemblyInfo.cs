@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aula06-pedagio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6163c8ca66b2ae60cd348f74ac134c3e5bdbed4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7fa01aff9502992a5a17e12f59a1e78dc701dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("aula06-pedagio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aula06-pedagio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
