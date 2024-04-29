@@ -8,24 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pia\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuário\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\aula06-pedagio.csproj",
+      "projectUniqueName": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\aula06-pedagio.csproj",
       "projectName": "aula06-pedagio",
-      "projectPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\aula06-pedagio.csproj",
-      "packagesPath": "C:\\Users\\pia\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\obj\\",
+      "projectPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\aula06-pedagio.csproj",
+      "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+      "outputPath": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\aula06-pedagio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,3 +13,18 @@ D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj
 D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.pdb
 D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.genruntimeconfig.cache
 D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\ref\aula06-pedagio.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\bin\Debug\net8.0\aula06-pedagio.exe
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\bin\Debug\net8.0\aula06-pedagio.deps.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\bin\Debug\net8.0\aula06-pedagio.runtimeconfig.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\bin\Debug\net8.0\aula06-pedagio.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\bin\Debug\net8.0\aula06-pedagio.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.AssemblyInfoInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.AssemblyInfo.cs
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.csproj.CoreCompileInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.sourcelink.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\refint\aula06-pedagio.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\aula06-pedagio.genruntimeconfig.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\aula06-pedagio\obj\Debug\net8.0\ref\aula06-pedagio.dll

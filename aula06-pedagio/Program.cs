@@ -10,6 +10,7 @@ Mobilete.cilindrada = "50";
 
 caminhao bongo = new caminhao();
 bongo.eixos =  5;
+Console.WriteLine("eixos" + bongo.eixos);
 
 Ped_Curitiba.CobrarPedagio(Santana);
 Ped_Curitiba.CobrarPedagio(Mobilete);

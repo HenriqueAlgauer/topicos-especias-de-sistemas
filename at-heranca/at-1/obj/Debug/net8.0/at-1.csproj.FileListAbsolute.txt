@@ -1,0 +1,15 @@
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.AssemblyInfoInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.AssemblyInfo.cs
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.csproj.CoreCompileInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.sourcelink.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\bin\Debug\net8.0\at-1.exe
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\bin\Debug\net8.0\at-1.deps.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\bin\Debug\net8.0\at-1.runtimeconfig.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\bin\Debug\net8.0\at-1.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\bin\Debug\net8.0\at-1.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\refint\at-1.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\at-1.genruntimeconfig.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-heranca\at-1\obj\Debug\net8.0\ref\at-1.dll
