@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("primeriaApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4afdb6e732bbbba587f58436c7efa1efff927777")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa990af06c2c72a30bf2558a99395145e0923f1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("primeriaApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("primeriaApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
