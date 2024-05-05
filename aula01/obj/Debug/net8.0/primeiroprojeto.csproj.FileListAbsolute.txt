@@ -1,0 +1,15 @@
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\bin\Debug\net8.0\primeiroprojeto.exe
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\bin\Debug\net8.0\primeiroprojeto.deps.json
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\bin\Debug\net8.0\primeiroprojeto.runtimeconfig.json
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\bin\Debug\net8.0\primeiroprojeto.dll
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\bin\Debug\net8.0\primeiroprojeto.pdb
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.GeneratedMSBuildEditorConfig.editorconfig
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.AssemblyInfoInputs.cache
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.AssemblyInfo.cs
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.csproj.CoreCompileInputs.cache
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.sourcelink.json
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.dll
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\refint\primeiroprojeto.dll
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.pdb
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\primeiroprojeto.genruntimeconfig.cache
+d:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\primeiroprojeto\obj\Debug\net8.0\ref\primeiroprojeto.dll

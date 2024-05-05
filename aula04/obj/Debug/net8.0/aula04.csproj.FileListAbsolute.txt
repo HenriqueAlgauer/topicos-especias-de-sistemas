@@ -1,0 +1,15 @@
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.AssemblyInfoInputs.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.AssemblyInfo.cs
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.csproj.CoreCompileInputs.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.sourcelink.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\bin\Debug\net8.0\aula04.exe
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\bin\Debug\net8.0\aula04.deps.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\bin\Debug\net8.0\aula04.runtimeconfig.json
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\bin\Debug\net8.0\aula04.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\bin\Debug\net8.0\aula04.pdb
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\refint\aula04.dll
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.pdb
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\aula04.genruntimeconfig.cache
+D:\Visual Studio Code\faculdade\topicos_especiais_de_sistemas\aula04\obj\Debug\net8.0\ref\aula04.dll
