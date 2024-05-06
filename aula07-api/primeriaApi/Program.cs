@@ -11,6 +11,7 @@ app.MapGet("/seunome", () => {
 });
 
 app.MapPost("/criarConta", async (HttpContext context) => {
+<<<<<<< HEAD
     Console.WriteLine(context);
     using var reader = new System.IO.StreamReader(context.Request.Body);
     var body = await reader.ReadToEndAsync();
@@ -18,6 +19,16 @@ app.MapPost("/criarConta", async (HttpContext context) => {
     var json = JsonDocument.Parse(body);
     
     return "recebido";
+=======
+    using var reader = new System.IO.StreamReader(context.Request.Body);
+    
+    var body = await reader.ReadToEndAsync();
+
+    var json = System.Text.Json.JsonDocument.Parse(body);
+    var userName = json.RootElement.GetProperty("nome");
+
+    return "recebido: " + userName;
+>>>>>>> 5484b56968e1b65d6cc7ab02310a5fc1f48518dc
 });
 
 app.Run();
