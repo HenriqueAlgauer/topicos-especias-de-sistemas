@@ -1,0 +1,15 @@
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.AssemblyInfoInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.AssemblyInfo.cs
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.csproj.CoreCompileInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.sourcelink.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\bin\Debug\net8.0\exe6.exe
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\bin\Debug\net8.0\exe6.deps.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\bin\Debug\net8.0\exe6.runtimeconfig.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\bin\Debug\net8.0\exe6.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\bin\Debug\net8.0\exe6.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\refint\exe6.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\exe6.genruntimeconfig.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe6\obj\Debug\net8.0\ref\exe6.dll

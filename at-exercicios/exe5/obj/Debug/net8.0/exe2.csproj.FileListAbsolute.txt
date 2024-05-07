@@ -1,0 +1,15 @@
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.AssemblyInfoInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.AssemblyInfo.cs
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.csproj.CoreCompileInputs.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.sourcelink.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\bin\Debug\net8.0\exe2.exe
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\bin\Debug\net8.0\exe2.deps.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\bin\Debug\net8.0\exe2.runtimeconfig.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\bin\Debug\net8.0\exe2.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\bin\Debug\net8.0\exe2.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\refint\exe2.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.pdb
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\exe2.genruntimeconfig.cache
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\at-exercicios\exe2\obj\Debug\net8.0\ref\exe2.dll
