@@ -1,3 +1,5 @@
+namespace aula08.controller;
+
 public class UserController
 {
     public string UserLogin { get; set; }

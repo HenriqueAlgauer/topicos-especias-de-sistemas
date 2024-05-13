@@ -1,3 +1,7 @@
+using System.Text.Json;
+using aula08.controller;
+using Microsoft.AspNetCore.Authentication;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
