@@ -11,15 +11,13 @@ public class UserController
         UserPassword = userPassword;
     }
 
-    public bool Login()
+    public bool Login(String user, String password)
     {
+        bool response = false;
         if (UserLogin == "admin" && UserPassword == "abc")
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
+        return response;
     }
 }
