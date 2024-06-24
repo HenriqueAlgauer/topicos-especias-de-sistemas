@@ -20,8 +20,8 @@ builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<ClienteService>();
 builder.Services.AddScoped<FornecedorService>();
 builder.Services.AddScoped<UsuarioService>();
-// builder.Services.AddScoped<VendaService>();
-// builder.Services.AddScoped<DepositoService>();
+builder.Services.AddScoped<VendaService>();
+builder.Services.AddScoped<DepositoService>();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
@@ -31,7 +31,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 // Starta Conexão Com o BD 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<LojaDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 37))));
+builder.Services.AddDbContext<LojaDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 36))));
 
 // Configuração do JWT
 var secretKey = "asdcasdcasdcasdcasdcasdcasdcasdc";
@@ -331,214 +331,214 @@ app.MapDelete("/rotaSegura/deleteFornecedor/{id}", [Authorize] async (int id, Fo
 // EndPoint's da Venda 
 
 // EndPoint para adicionar uma venda 
-// app.MapPost("/rotaSegura/createVenda", [Authorize] async (VendaService vendaService, ProductService produtoService, ClienteService clienteService, Venda venda) =>
-// {
-//     var produtoVenda = await produtoService.GetProductByIdAsync(venda.IdProduto);
-//     var clienteVenda = await clienteService.GetClienteAsync(venda.IdCliente);
+app.MapPost("/rotaSegura/createVenda", [Authorize] async (VendaService vendaService, ProductService produtoService, ClienteService clienteService, Venda venda) =>
+{
+    var produtoVenda = await produtoService.GetProductByIdAsync(venda.IdProduto);
+    var clienteVenda = await clienteService.GetClienteByIdAsync(venda.IdCliente);
 
-//     if (produtoVenda != null && clienteVenda != null)
-//     {
-//         if (venda.quantidadeVendida <= produtoVenda.QuantidadeEstoque)
-//         {
-//             await vendaService.AddVendaAsync(venda);
-//             produtoVenda.QuantidadeEstoque -= venda.quantidadeVendida;
-//             await produtoService.UpdateProductAsync(produtoVenda); // Certifique-se de atualizar o produto no banco de dados
+    if (produtoVenda != null && clienteVenda != null)
+    {
+        if (venda.quantidadeVendida <= produtoVenda.QuantidadeEstoque)
+        {
+            await vendaService.AddVendaAsync(venda);
+            produtoVenda.QuantidadeEstoque -= venda.quantidadeVendida;
+            await produtoService.UpdateProductAsync(produtoVenda); // Certifique-se de atualizar o produto no banco de dados
 
-//             return Results.Ok(venda);
-//         }
-//         return Results.BadRequest("Quantidade Vendida maior que disponível em estoque");
-//     }
+            return Results.Ok(venda);
+        }
+        return Results.BadRequest("Quantidade Vendida maior que disponível em estoque");
+    }
 
-//     return Results.BadRequest("Cliente ID ou Produto ID inválidos");
-// });
+    return Results.BadRequest("Cliente ID ou Produto ID inválidos");
+});
 
-// // EndPoint para buscar todas as vendas
-// app.MapGet("/rotaSegura/vendas", [Authorize] async (VendaService vendaService) =>
-// {
-//     var vendas = await vendaService.GetAllVendasAsync();
+// EndPoint para buscar todas as vendas
+app.MapGet("/rotaSegura/vendas", [Authorize] async (VendaService vendaService) =>
+{
+    var vendas = await vendaService.GetAllVendasAsync();
 
-//     if (vendas != null)
-//     {
-//         return Results.Ok(vendas);
-//     }
+    if (vendas != null)
+    {
+        return Results.Ok(vendas);
+    }
 
-//     return Results.BadRequest("Nenhum usuário cadastrado");
-// });
+    return Results.BadRequest("Nenhum usuário cadastrado");
+});
 
 // EndPoint para pegar venda por Id
-// app.MapGet("/rotaSegura/venda/{id}", [Authorize] async (VendaService vendaService, int id) =>
-// {
-//     var venda = await vendaService.GetVendaByIdAsync(id);
+app.MapGet("/rotaSegura/venda/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+    var venda = await vendaService.GetVendaByIdAsync(id);
 
-//     if (venda != null)
-//     {
-//         return Results.Ok(venda);
-//     }
+    if (venda != null)
+    {
+        return Results.Ok(venda);
+    }
 
-//     return Results.BadRequest($"Nenhuma Venda encontrada com o ID {id}");
-// });
+    return Results.BadRequest($"Nenhuma Venda encontrada com o ID {id}");
+});
 
-// app.MapPut("/rotaSegura/vendaUpdate/{id}", [Authorize] async (VendaService vendaService, int id) =>
-// {
-//     var Venda = await vendaService.GetVendaByIdAsync(id);
+app.MapPut("/rotaSegura/vendaUpdate/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+    var Venda = await vendaService.GetVendaByIdAsync(id);
 
-//     if (Venda != null)
-//     {
-//         await vendaService.UpdateVendaAsync(Venda);
-//         return Results.Ok(Venda);
-//     }
+    if (Venda != null)
+    {
+        await vendaService.UpdateVendaAsync(Venda);
+        return Results.Ok(Venda);
+    }
 
-//     return Results.BadRequest("ID fornecido inválido");
-// });
+    return Results.BadRequest("ID fornecido inválido");
+});
 
-// app.MapDelete("/rotaSegura/vendaDelete/{id}", [Authorize] async (VendaService vendaService, int id) =>
-// {
-//     await vendaService.DeleteVendaAsync(id);
-//     return Results.Ok($"Venda com o ID {id} deletada");
-// });
+app.MapDelete("/rotaSegura/vendaDelete/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+    await vendaService.DeleteVendaAsync(id);
+    return Results.Ok($"Venda com o ID {id} deletada");
+});
 
-// // EndPoint's Deposito
+// EndPoint's Deposito
 
-// app.MapPost("/rotaSegura/depositoCreate", [Authorize] async (DepositoService depositoService, ProductService produtoService, Deposito deposito) =>
-// {
-//     var produtoDeposito = await produtoService.GetProductByIdAsync(deposito.IdProduto);
+app.MapPost("/rotaSegura/depositoCreate", [Authorize] async (DepositoService depositoService, ProductService produtoService, Deposito deposito) =>
+{
+    var produtoDeposito = await produtoService.GetProductByIdAsync(deposito.IdProduto);
 
-//     if (produtoDeposito != null)
-//     {
-//         await depositoService.AddDepositoAsync(deposito);
-//         produtoDeposito.QuantidadeEstoque += deposito.quantidade;
-//         await produtoService.UpdateProductAsync(produtoDeposito);
-//         return Results.Ok(deposito);
-//     }
-//     return Results.BadRequest("Id de produto inválido");
-// });
+    if (produtoDeposito != null)
+    {
+        await depositoService.AddDepositoAsync(deposito);
+        produtoDeposito.QuantidadeEstoque += deposito.quantidade;
+        await produtoService.UpdateProductAsync(produtoDeposito);
+        return Results.Ok(deposito);
+    }
+    return Results.BadRequest("Id de produto inválido");
+});
 
-// app.MapGet("/rotaSegura/depositos", [Authorize] async (DepositoService depositoService) =>
-// {
-//     var depositos = await depositoService.GetAllDepositoAsync();
+app.MapGet("/rotaSegura/depositos", [Authorize] async (DepositoService depositoService) =>
+{
+    var depositos = await depositoService.GetAllDepositoAsync();
 
-//     if (depositos != null)
-//     {
-//         return Results.Ok(depositos);
-//     }
+    if (depositos != null)
+    {
+        return Results.Ok(depositos);
+    }
 
-//     return Results.BadRequest("Nenhum produto cadastrado");
-// });
+    return Results.BadRequest("Nenhum produto cadastrado");
+});
 
-// app.MapGet("/rotaSegura/deposito/{id}", [Authorize] async (DepositoService depositoService, int id) =>
-// {
-//     var deposito = await depositoService.GetDepositoById(id);
+app.MapGet("/rotaSegura/deposito/{id}", [Authorize] async (DepositoService depositoService, int id) =>
+{
+    var deposito = await depositoService.GetDepositoById(id);
 
-//     if (deposito != null)
-//     {
-//         return Results.Ok(deposito);
-//     }
+    if (deposito != null)
+    {
+        return Results.Ok(deposito);
+    }
 
-//     return Results.BadRequest("Id fornecido inválido");
-// });
+    return Results.BadRequest("Id fornecido inválido");
+});
 
-// app.MapPut("/rotaSegura/depositoUpdate/{id}", [Authorize] async (DepositoService depositoService, int id, Deposito deposito) =>
-// {
-//     var depositoFound = await depositoService.GetDepositoById(id);
+app.MapPut("/rotaSegura/depositoUpdate/{id}", [Authorize] async (DepositoService depositoService, int id, Deposito deposito) =>
+{
+    var depositoFound = await depositoService.GetDepositoById(id);
 
-//     if (depositoFound.Id == deposito.Id)
-//     {
-//         await depositoService.UpdateDeposito(deposito);
-//         return Results.Ok(deposito);
-//     }
+    if (depositoFound.Id == deposito.Id)
+    {
+        await depositoService.UpdateDeposito(deposito);
+        return Results.Ok(deposito);
+    }
 
-//     return Results.BadRequest("ID produto inválido");
-// });
+    return Results.BadRequest("ID produto inválido");
+});
 
-// app.MapDelete("/rotaSegura/depositoDelete/{id}", [Authorize] async (DepositoService depositoService, int id) =>
-// {
-//     await depositoService.DeleteDeposito(id);
-//     return Results.Ok("Produto deletado com sucesso");
-// });
+app.MapDelete("/rotaSegura/depositoDelete/{id}", [Authorize] async (DepositoService depositoService, int id) =>
+{
+    await depositoService.DeleteDeposito(id);
+    return Results.Ok("Produto deletado com sucesso");
+});
 
-// // Consultar vendas detalhadas por produto
-// app.MapGet("/rotaSegura/vendaDetalhada/{idProduto}", async (int idProduto, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarVendasPorProdutoDetalhada(idProduto);
-//     if (result.Any())
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Nenhuma venda encontrada para o produto especificado.");
-//     }
-// });
+// Consultar vendas detalhadas por produto
+app.MapGet("/rotaSegura/vendaDetalhada/{idProduto}", async (int idProduto, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarVendasPorProdutoDetalhada(idProduto);
+    if (result.Any())
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Nenhuma venda encontrada para o produto especificado.");
+    }
+});
 
-// // Consultar vendas sumarizadas por produto
-// app.MapGet("/rotaSegura/vendaSumarizada/{idProduto}", async (int idProduto, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarVendasPorProdutoSumarizada(idProduto);
-//     if (result != null)
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Nenhuma venda encontrada para o produto especificado.");
-//     }
-// });
+// Consultar vendas sumarizadas por produto
+app.MapGet("/rotaSegura/vendaSumarizada/{idProduto}", async (int idProduto, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarVendasPorProdutoSumarizada(idProduto);
+    if (result != null)
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Nenhuma venda encontrada para o produto especificado.");
+    }
+});
 
-// // Consultar vendas detalhadas por cliente
-// app.MapGet("/rotaSegura/vendaDetalhadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarVendasPorClienteDetalhada(idCliente);
-//     if (result.Any())
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Nenhuma venda encontrada para o cliente especificado.");
-//     }
-// });
+// Consultar vendas detalhadas por cliente
+app.MapGet("/rotaSegura/vendaDetalhadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarVendasPorClienteDetalhada(idCliente);
+    if (result.Any())
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Nenhuma venda encontrada para o cliente especificado.");
+    }
+});
 
-// // Consultar vendas sumarizadas por cliente
-// app.MapGet("/rotaSegura/vendaSumarizadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarVendasPorClienteSumarizada(idCliente);
-//     if (result != null)
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Nenhuma venda encontrada para o cliente especificado.");
-//     }
-// });
+// Consultar vendas sumarizadas por cliente
+app.MapGet("/rotaSegura/vendaSumarizadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarVendasPorClienteSumarizada(idCliente);
+    if (result != null)
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Nenhuma venda encontrada para o cliente especificado.");
+    }
+});
 
-// // Consultar produtos no depósito de forma sumarizada
-// app.MapGet("/rotaSegura/produtosDeposito/{idDeposito}", async (int idDeposito, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarProdutosNoDepositoSumarizada(idDeposito);
-//     if (result.Any())
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Nenhum produto encontrado no depósito especificado.");
-//     }
-// });
+// Consultar produtos no depósito de forma sumarizada
+app.MapGet("/rotaSegura/produtosDeposito/{idDeposito}", async (int idDeposito, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarProdutosNoDepositoSumarizada(idDeposito);
+    if (result.Any())
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Nenhum produto encontrado no depósito especificado.");
+    }
+});
 
-// // Consultar a quantidade de um produto no depósito
-// app.MapGet("/rotaSegura/produtoDeposito/{idProduto}", async (int idProduto, VendaService vendaService) =>
-// {
-//     var result = await vendaService.ConsultarQuantidadeProdutoDeposito(idProduto);
-//     if (result != null)
-//     {
-//         return Results.Ok(result);
-//     }
-//     else
-//     {
-//         return Results.NotFound("Produto não encontrado no depósito.");
-//     }
-// });
+// Consultar a quantidade de um produto no depósito
+app.MapGet("/rotaSegura/produtoDeposito/{idProduto}", async (int idProduto, VendaService vendaService) =>
+{
+    var result = await vendaService.ConsultarQuantidadeProdutoDeposito(idProduto);
+    if (result != null)
+    {
+        return Results.Ok(result);
+    }
+    else
+    {
+        return Results.NotFound("Produto não encontrado no depósito.");
+    }
+});
 
 
 app.Run();

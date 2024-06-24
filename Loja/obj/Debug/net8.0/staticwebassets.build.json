@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1OJkVDpR3zbXDoeb6lok8iDyD/nwVsv4L08tGwwXkCY=",
+  "Hash": "IjZR9vOo9ItOzDotcHGRyiucCyDmtYZrHZM7opZ5Yd4=",
   "Source": "Loja",
   "BasePath": "_content/Loja",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Loja\\wwwroot",
       "Source": "Loja",
-      "ContentRoot": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\Loja\\wwwroot\\",
+      "ContentRoot": "D:\\Visual Studio Code\\faculdade\\topicos_especiais_de_sistemas\\Loja\\wwwroot\\",
       "BasePath": "_content/Loja",
       "Pattern": "**"
     }
