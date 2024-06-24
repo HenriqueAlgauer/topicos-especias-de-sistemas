@@ -42,7 +42,7 @@ namespace loja.services
             var existingUser = await _dbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
             if (existingUser == null)
             {
-                throw new InvalidOperationException("Usuario não localizado no sistema");
+                throw new InvalidOperationException("Não foi possível encontrar o usuário");
             }
 
             existingUser.Email = usuario.Email;
@@ -51,7 +51,7 @@ namespace loja.services
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteUsuarioAsync(int id)
+        public async Task DeleteUsuarioByAsync(int id)
         {
             var usuario = await _dbContext.Usuarios.FindAsync(id);
 

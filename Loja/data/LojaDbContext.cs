@@ -3,7 +3,6 @@ using loja.models;
 
 namespace loja.data
 {
-
     public class LojaDbContext : DbContext
     {
         public LojaDbContext(DbContextOptions<LojaDbContext> options) : base(options) { }
@@ -13,6 +12,7 @@ namespace loja.data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Deposito> Depositos { get; set; }
+        public DbSet<Servico> Servicos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,16 +31,17 @@ namespace loja.data
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Venda>()
-            .HasOne(venda => venda.Cliente)
-            .WithMany(cliente => cliente.Vendas)
-            .HasForeignKey(venda => venda.IdCliente)
-            .OnDelete(DeleteBehavior.Cascade);
+                .HasOne(venda => venda.Cliente)
+                .WithMany(cliente => cliente.Vendas)
+                .HasForeignKey(venda => venda.IdCliente)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Deposito>()
-            .HasOne(deposito => deposito.Produto)
-            .WithMany(produto => produto.Depositos)
-            .HasForeignKey(deposito => deposito.IdProduto)
-            .OnDelete(DeleteBehavior.Cascade);
+                .HasOne(deposito => deposito.Produto)
+                .WithMany(produto => produto.Depositos)
+                .HasForeignKey(deposito => deposito.IdProduto)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 
