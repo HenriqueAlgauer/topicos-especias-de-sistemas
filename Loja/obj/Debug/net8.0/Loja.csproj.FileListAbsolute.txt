@@ -104,3 +104,12 @@ D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\obj\Debug\net8.
 D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\obj\Debug\net8.0\Loja.pdb
 D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\obj\Debug\net8.0\Loja.genruntimeconfig.cache
 D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\obj\Debug\net8.0\ref\Loja.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Loja.staticwebassets.runtime.json
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\VisualStudioCODE\faculdade\topicos_especiais_de_sistemas\Loja\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

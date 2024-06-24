@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "1BwYevqSOCf/s3q45b6FkUesXYIr/KNu+EaoWgBuiH4=",
+  "Hash": "1OJkVDpR3zbXDoeb6lok8iDyD/nwVsv4L08tGwwXkCY=",
   "Source": "Loja",
   "BasePath": "_content/Loja",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Loja\\wwwroot",
+      "Source": "Loja",
+      "ContentRoot": "D:\\VisualStudioCODE\\faculdade\\topicos_especiais_de_sistemas\\Loja\\wwwroot\\",
+      "BasePath": "_content/Loja",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

@@ -9,6 +9,7 @@ namespace loja.data
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Fornecedor> Fornecedores { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +24,10 @@ namespace loja.data
                 entity.HasKey(e => e.Id);
             });
             modelBuilder.Entity<Fornecedor>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+            });
+            modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.Id);
             });

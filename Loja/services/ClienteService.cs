@@ -45,5 +45,10 @@ namespace loja.services
                 await _dbContext.SaveChangesAsync();
             }
         }
+
+        internal async Task<object?> GetAllClienteAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

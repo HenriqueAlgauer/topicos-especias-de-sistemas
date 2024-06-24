@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using loja.data;
 
@@ -11,9 +12,11 @@ using loja.data;
 namespace Loja.Migrations
 {
     [DbContext(typeof(LojaDbContext))]
-    partial class LojaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240624160533_AttTipoEmail")]
+    partial class AttTipoEmail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,20 +99,17 @@ namespace Loja.Migrations
 
             modelBuilder.Entity("loja.models.Usuario", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<string>("Email")
-                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Nome")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Senha")
                         .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                    b.HasKey("Email");
 
                     b.ToTable("Usuarios");
                 });
