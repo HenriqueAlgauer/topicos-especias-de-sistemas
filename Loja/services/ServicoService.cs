@@ -15,23 +15,23 @@ namespace loja.services
             _dbContext = dbContext;
         }
 
-        public async Task<List<Servico>> GetAllServicosAsync()
+        public async Task<List<Servico>> GetAllServicos()
         {
             return await _dbContext.Servicos.ToListAsync();
         }
 
-        public async Task<Servico> GetServicoByIdAsync(int id)
+        public async Task<Servico> GetServicoById(int id)
         {
             return await _dbContext.Servicos.FindAsync(id);
         }
 
-        public async Task AddServicoAsync(Servico servico)
+        public async Task NewServico(Servico servico)
         {
             _dbContext.Servicos.Add(servico);
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task UpdateServicoAsync(int id, Servico servico)
+        public async Task UpdateServico(int id, Servico servico)
         {
             var servicoEX = await _dbContext.Servicos.FirstOrDefaultAsync(u => u.Id == id);
             if (servicoEX == null)
@@ -45,7 +45,7 @@ namespace loja.services
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteServicoByAsync(int id)
+        public async Task DeleteServicoById(int id)
         {
             var servico = await _dbContext.Servicos.FindAsync(id);
 

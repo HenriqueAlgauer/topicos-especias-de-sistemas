@@ -14,30 +14,25 @@ namespace loja.services
         {
             _dbContext = dbContext;
         }
-
-        public async Task<List<Usuario>> GetAllUsuariosAsync()
+        public async Task<List<Usuario>> GetAllUsuarios()
         {
             return await _dbContext.Usuarios.ToListAsync();
         }
-
-        public async Task<Usuario> GetUsuarioByIdAsync(int id)
+        public async Task<Usuario> GetUsuarioById(int id)
         {
             return await _dbContext.Usuarios.FindAsync(id);
         }
-
-        public async Task<Usuario> GetUsuarioByLoginAsync(string userEmail)
+        public async Task<Usuario> GetUsuarioByLogin(string userEmail)
         {
             var usuario = await _dbContext.Usuarios.SingleOrDefaultAsync(x => x.Email == userEmail);
             return usuario;
         }
-
-        public async Task AddUsuarioAsync(Usuario usuario)
+        public async Task NewUsuario(Usuario usuario)
         {
             _dbContext.Usuarios.Add(usuario);
             await _dbContext.SaveChangesAsync();
         }
-
-        public async Task UpdateUsuarioAsync(int id, Usuario usuario)
+        public async Task UpdateUsuario(int id, Usuario usuario)
         {
             var existingUser = await _dbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
             if (existingUser == null)
@@ -50,8 +45,7 @@ namespace loja.services
 
             await _dbContext.SaveChangesAsync();
         }
-
-        public async Task DeleteUsuarioByAsync(int id)
+        public async Task DeleteUsuarioBy(int id)
         {
             var usuario = await _dbContext.Usuarios.FindAsync(id);
 

@@ -56,7 +56,7 @@ namespace loja.services
                 .Select(v => new
                 {
                     v.Id,
-                    v.dataVenda,
+                    v.DataVenda,
                     ProdutoNome = v.Produto.Nome,
                     ClienteNome = v.Cliente.Nome,
                     v.Produto.Preco,
@@ -89,7 +89,7 @@ namespace loja.services
                 .Select(v => new
                 {
                     v.Id,
-                    v.dataVenda,
+                    v.DataVenda,
                     ProdutoNome = v.Produto.Nome,
                     v.Produto.Preco,
                     v.valorVenda

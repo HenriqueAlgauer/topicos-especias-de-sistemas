@@ -8,26 +8,19 @@ namespace loja.services
     public class DepositoService
     {
         public readonly LojaDbContext _dbContext;
-
         public DepositoService(LojaDbContext dbContext)
         {
             _dbContext = dbContext;
-
         }
-
-        public async Task<List<Deposito>> GetAllDepositoAsync()
+        public async Task<List<Deposito>> GetAllDeposito()
         {
             return await _dbContext.Depositos.ToListAsync();
         }
-
         public async Task<Deposito> GetDepositoById(int id)
         {
-
             return await _dbContext.Depositos.FindAsync(id);
-
         }
-
-        public async Task AddDepositoAsync(Deposito deposito)
+        public async Task NewDeposito(Deposito deposito)
         {
             _dbContext.Depositos.Add(deposito);
             await _dbContext.SaveChangesAsync();

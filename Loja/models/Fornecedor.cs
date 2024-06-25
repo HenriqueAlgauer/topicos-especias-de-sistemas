@@ -9,11 +9,11 @@ namespace loja.models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Cnpj { get; set; }
-        public string Endereco { get; set; }
-        public string Email { get; set; }
-        public string Telefone { get; set; }
+        public String Nome { get; set; }
+        public String Cnpj { get; set; }
+        public String Endereco { get; set; }
+        public String Email { get; set; }
+        public String Telefone { get; set; }
         public ICollection<Produto> Produtos { get; set; }
     }
 }

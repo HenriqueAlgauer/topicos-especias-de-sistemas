@@ -10,7 +10,7 @@ namespace loja.models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public String Nome { get; set; }
         public int IdProduto { get; set; }
         public Produto Produto { get; set; }
         public int quantidade { get; set; }

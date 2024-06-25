@@ -1,20 +1,18 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace loja.models
 {
-    public class Venda
+    public class Contrato
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public DateTime DataVenda { get; set; }
-        public int quantidadeVendida { get; set; }
-        public Double valorVenda { get; set; }
+        public int IdServico { get; set; }
+        public Servico Servico { get; set; }
         public int IdCliente { get; set; }
-        public int IdProduto { get; set; }
         public Cliente Cliente { get; set; }
-        public Produto Produto { get; set; }
+        public decimal PrecoCobrado { get; set; }
+        public DateTime DataContratacao { get; set; }
     }
 }

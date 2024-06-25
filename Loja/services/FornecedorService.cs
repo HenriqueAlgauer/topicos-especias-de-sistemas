@@ -13,30 +13,25 @@ namespace loja.services
         {
             _dbContext = dbContext;
         }
-        // Método para consultar todos os produtos
-        public async Task<List<Fornecedor>> GetAllFornecedoresAsync()
+        public async Task<List<Fornecedor>> GetAllFornecedores()
         {
             return await _dbContext.Fornecedores.ToListAsync();
         }
-        // Métodd para consultar um produto a partir do seu Id
-        public async Task<Fornecedor> GetFornecedorByIdAsync(int id)
+        public async Task<Fornecedor> GetFornecedorById(int id)
         {
             return await _dbContext.Fornecedores.FindAsync(id);
         }
-        // Método para gravar um novo produto
-        public async Task AddFornecedorAsync(Fornecedor fornecedor)
+        public async Task NewFornecedor(Fornecedor fornecedor)
         {
             _dbContext.Fornecedores.Add(fornecedor);
             await _dbContext.SaveChangesAsync();
         }
-        // Método para atualizar os dados de um produto
-        public async Task UpdateFornecedorAsync(Fornecedor fornecedor)
+        public async Task UpdateFornecedor(Fornecedor fornecedor)
         {
             _dbContext.Entry(fornecedor).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
-        // Método para excluir um produto
-        public async Task DeleteFornecedorAsync(int id)
+        public async Task DeleteFornecedor(int id)
         {
             var fornecedor = await _dbContext.Fornecedores.FindAsync(id);
             if (fornecedor != null)

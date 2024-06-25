@@ -13,6 +13,7 @@ namespace loja.data
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Deposito> Depositos { get; set; }
         public DbSet<Servico> Servicos { get; set; }
+        public DbSet<Contrato> Contratos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -40,6 +41,18 @@ namespace loja.data
                 .HasOne(deposito => deposito.Produto)
                 .WithMany(produto => produto.Depositos)
                 .HasForeignKey(deposito => deposito.IdProduto)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Contrato>()
+                .HasOne(contrato => contrato.Servico)
+                .WithMany(servico => servico.Contratos)
+                .HasForeignKey(contrato => contrato.IdServico)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Contrato>()
+                .HasOne(contrato => contrato.Cliente)
+                .WithMany(cliente => cliente.Contratos)
+                .HasForeignKey(contrato => contrato.IdCliente)
                 .OnDelete(DeleteBehavior.Cascade);
 
         }
